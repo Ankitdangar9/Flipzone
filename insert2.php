@@ -1,3 +1,5 @@
+
+
 <?php
 
 include 'conn.php';
@@ -9,6 +11,9 @@ $name=$_POST['username'];
 $useremail=$_POST['useremail'];
 $usernumber=$_POST['usernumber'];
 $userpassword=$_POST['userpassword'];
+
+
+
 
 
 $dupemail=mysqli_query($conn, "SELECT * FROM `login1` WHERE email = '$useremail'");
@@ -36,12 +41,12 @@ if(mysqli_num_rows($dupusername)){
 }
 else{
     $sql3= "INSERT INTO `login1` (`name`, `email`, `usernumber`, `userpassword`) VALUES ('$name', '$useremail', '$usernumber', '$userpassword')";
-$result = mysqli_query($conn2, $sql3) or die("query failed");
+$result = mysqli_query($conn, $sql3) or die("query failed");
 echo "
     <script>
     
     alert('register succefully');
-    window.location.href = 'loginuser.php';
+    window.location.href = 'index.php';
     </script>
     
     ";
@@ -50,5 +55,5 @@ echo "
 
 }
 
-
 ?>
+

@@ -26,16 +26,17 @@
             <div class="mb-3">
                 <label for="">usernumber:</label>
                 <input type="number" name="usernumber" placeholder="enter username" class="form-control">
+               
             </div>
             <div class="mb-3">
                 <label for="">userpassword:</label>
                 <input type="password" name="userpassword" placeholder="enter username" class="form-control">
             </div>
             <div class="mb-3">
-            <button name="submit" class="w-100 bg-warning fs-4 text-white">registration</button>
+            <button name="submit"  class="w-100 bg-warning fs-4 text-white">registration</button>
             </div>
             <div class="mb-3">
-            <button class="w-100 bg-danger fs-4 text-white "><a href="loginuser.php" class="text-decoration-none text-white">alredy account</a></button>
+            <button class="w-100 bg-danger fs-4 text-white "><a href="index.php" class="text-decoration-none text-white">alredy account</a></button>
             </div>
         </form>
         </div>
