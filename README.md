@@ -1,1 +1,1 @@
-# Flipzone
+https://flipzon.lovestoblog.com
